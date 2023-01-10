@@ -31,7 +31,7 @@ The password can include special characters. If you’re unfamiliar with these, 
 * JavaScript
 
 ## Deployed Site Link
-[GitHub Pages](https://apyosi.github.io/Console-Finances/)
+[GitHub Pages](https://apyosi.github.io/password-generator/)
 
 ## Usage
 Generate password by click the generate button and follow the instructions!
