@@ -99,7 +99,12 @@ function initApp() {
   console.log(`Password Length: ${passLength}`);
   let options = getPassCharOptions(passLength);
   console.log(`User options:`);
-}
+  console.log(options);
+  let charArray = generateCharArray(options);
+  console.log(`Characters Array based on the user options: ${charArray}`);
+  // let char = getRandomChararacter(charArray);
+  let password = generatePassword(passLength, charArray);
+  console.log(`Generated password: ${password}`);
 
 // Function to prompt user for password length
 function getPassLengthOptions() {
@@ -166,4 +171,21 @@ function generateCharArray(options) {
     charArray = charArray.concat(specialCharacters);
   }
   return charArray;
+}
+
+// Function for getting a random element from an array
+function getRandomChararacter(array) {
+  let randomIndex = Math.floor(Math.random() * array.length);
+  // console.log(`${randomIndex} - ${array[randomIndex]}`);
+  let char = array[randomIndex];
+  return char;
+}
+
+// Function to generate password with the user input and options
+function generatePassword(passLength, charArray) {
+  let password = "";
+  for (let i = 0; i < passLength; i++) {
+    password += getRandomChararacter(charArray);
+  }
+  return password;
 }
