@@ -22,7 +22,7 @@ The password can include special characters. If you’re unfamiliar with these, 
   * Once prompts are answered then the password should be generated and displayed in an alert or written to the page
 
 ## Outcome
-![password generator demo](/assets/screenshot.png)
+![password generator demo](/demo/image.png)
 
 
 ## Built with
